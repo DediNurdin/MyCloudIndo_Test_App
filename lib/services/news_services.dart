@@ -14,12 +14,4 @@ class NewsService {
 
     return response.data;
   }
-
-  fetchNewsBySearching(String title) async {
-    var response = await _dio.get(
-      'v2/everything?q=$title&apiKey=094abddfda1944fb87d868677f3005ee',
-    );
-
-    return response.data;
-  }
 }
